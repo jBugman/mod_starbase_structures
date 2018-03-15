@@ -1,0 +1,51 @@
+research_lab = {
+	icon = "GFX_starbase_curator_think_tank"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	
+	potential = {
+		exists = owner
+	}
+	
+	cost = {
+		minerals = 200
+	}
+
+	upkeep_resources = {
+		energy = 1
+	}
+
+	produced_resources = {
+		physics_research = 1
+		society_research = 1
+		engineering_research = 1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 10
+	}
+}
+
+solar_panels = {
+	icon = "GFX_solar_panel_network"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	
+	potential = {
+		exists = owner
+	}
+	
+	cost = {
+		minerals = 100
+	}
+	
+	produced_resources = {
+		energy = 2
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 10
+	}
+}
