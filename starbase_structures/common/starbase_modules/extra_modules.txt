@@ -12,7 +12,7 @@ research_lab = {
 	}
 
 	upkeep_resources = {
-		energy = 1
+		energy = 1.5
 	}
 
 	produced_resources = {
