@@ -15,7 +15,7 @@ stb_research_facility = {
 				type = research_lab
 				count > 1
 			}
-		}		
+		}
 		modifier = {
 			add = 100
 			count_starbase_modules = {
@@ -36,11 +36,46 @@ stb_research_facility = {
 				type = research_lab
 				count > 4
 			}
-		}	
+		}
 		modifier = {
 			add = 100
 			count_starbase_modules = {
 				type = research_lab
+				count > 5
+			}
+		}
+		modifier = {
+			add = 150
+			count_starbase_modules = {
+				type = large_research_lab
+				count > 1
+			}
+		}
+		modifier = {
+			add = 150
+			count_starbase_modules = {
+				type = large_research_lab
+				count > 2
+			}
+		}
+		modifier = {
+			add = 150
+			count_starbase_modules = {
+				type = large_research_lab
+				count > 3
+			}
+		}
+		modifier = {
+			add = 150
+			count_starbase_modules = {
+				type = large_research_lab
+				count > 4
+			}
+		}
+		modifier = {
+			add = 150
+			count_starbase_modules = {
+				type = large_research_lab
 				count > 5
 			}
 		}

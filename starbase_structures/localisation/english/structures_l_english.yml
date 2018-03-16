@@ -1,5 +1,6 @@
 ﻿l_english:
  sm_research_lab:0 "Research Lab"
+ sm_large_research_lab:0 "Research Center"
  sm_large_resource_silo:0 "Large Resource Silo"
  sm_solar_panels:0 "Solar Panels"
  stb_research_facility:0 "Research Facility"
