@@ -1,9 +1,9 @@
 stb_research_facility = {
 	potential = {
 		has_starbase_size >= starbase_starport
-		count_starbase_modules = {
-			type = research_lab
-			count > 0
+		OR = {
+			has_starbase_module = research_lab
+			has_starbase_module = large_research_lab
 		}
 	}
 
