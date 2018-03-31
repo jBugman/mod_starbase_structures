@@ -1,62 +1,46 @@
-research_lab = {
-	icon = "GFX_starbase_curator_think_tank"
-	section = "REFINERY_STARBASE_SECTION"
-	construction_days = 180
-	
-	potential = {
-		exists = owner
-	}
-	
-	cost = {
-		minerals = 200
-	}
-
-	upkeep_resources = {
-		energy = 1
-	}
-
-	produced_resources = {
-		physics_research = 1
-		society_research = 1
-		engineering_research = 1
-	}
-	
-	ai_build_at_chokepoint = no
-	ai_weight = {
-		weight = 10
-	}
-}
-
-large_research_lab = {
+bugman.graviton_detector = {
 	icon = "GFX_starbase_curator_think_tank"
 	section = "REFINERY_STARBASE_SECTION"
 	construction_days = 240
 	
 	potential = {
 		exists = owner
+		owner = { has_technology = tech_sensors_3 }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			star = { is_star_class = sc_black_hole }
+		}
 	}
 	
 	cost = {
-		minerals = 350
+		minerals = 400
 	}
 
 	upkeep_resources = {
-		energy = 3
+		energy = 2
 	}
 
 	produced_resources = {
-		physics_research = 2
-		society_research = 2
-		engineering_research = 2
+		physics_research = 4
+		engineering_research = 1
 	}
+
+	show_in_tech = "tech_sensors_3"
 	
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 5
+		weight = 50
 	}
 }
 
-solar_panels = {
+bugman.solar_panels = {
 	icon = "GFX_solar_panel_network"
 	section = "REFINERY_STARBASE_SECTION"
 	construction_days = 180
@@ -75,6 +59,6 @@ solar_panels = {
 	
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 15
 	}
 }
