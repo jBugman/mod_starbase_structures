@@ -1,7 +1,14 @@
 ﻿l_english:
  sm_bugman.graviton_detector:0 "Graviton Detector"
- sm_bugman.large_resource_silo:0 "Large Resource Silo"
- sm_bugman.solar_panels:0 "Solar Panels"
- sm_bugman.gas_collector:0 "Gas Collector"
  bugman.research_facility:0 "Research Facility"
+
+ sm_bugman.large_resource_silo:0 "Large Resource Silo"
+
+ sm_bugman.solar_panels:0 "Solar Panels"
+
+ sm_bugman.gas_collector:0 "Gas Collector"
  bugman.nebula_refinery:0 "Nebula Refinery"
+
+ sm_bugman.hyperlane_beacon:0 "Hyperlane Beacon"
+ sm_bugman.hyperlane_beacon_desc:0 "Better version of Hyperlane Registrar\n"
+ aura_starbase_hyperlane_beacon:0 "$defensive_aura$ - $sm_bugman.hyperlane_beacon$"

@@ -1,0 +1,32 @@
+utility_component_template = {
+	key = "STARBASE_AURA_HYPERLANE_BEACON"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+	cost = 0
+
+	class_restriction = { shipclass_starbase }
+
+	friendly_aura = {
+		name = "aura_starbase_hyperlane_beacon"
+		system_wide = yes
+
+		stack_info = {
+			id = friendly_warp_fluctuator_aura
+			priority = 20
+		}
+
+		modifier = {
+			ship_windup_mult = -0.35
+			ship_winddown_mult = -0.66
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

@@ -1,6 +1,13 @@
 bugman.large_resource_silo = {
 	icon = "GFX_spaceport_module_resource_silo"
 	construction_days = 300
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
 	
 	cost = {
 		minerals = 400
@@ -15,5 +22,35 @@ bugman.large_resource_silo = {
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 10
+	}
+}
+
+bugman.hyperlane_beacon = {
+	icon = "GFX_spaceport_module_atmospheric_manipulator"
+	construction_days = 200
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_hyper_drive_2 }
+	}	
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	cost = {
+		minerals = 240
+	}
+
+	equipped_component = "STARBASE_AURA_HYPERLANE_BEACON"
+	show_in_tech = "tech_hyper_drive_2"
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 50
 	}
 }
