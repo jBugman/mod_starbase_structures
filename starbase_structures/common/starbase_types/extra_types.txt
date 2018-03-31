@@ -43,3 +43,49 @@ bugman.research_facility = {
 		}
 	}
 }
+
+bugman.nebula_refinery = {
+	potential = {
+		has_starbase_size >= starbase_starport
+		has_starbase_module = bugman.gas_collector
+	}
+
+	weight_modifier = {
+		base = 100	
+		modifier = {
+			add = 100
+			count_starbase_modules = {
+				type = bugman.gas_collector
+				count > 1
+			}
+		}
+		modifier = {
+			add = 100
+			count_starbase_modules = {
+				type = bugman.gas_collector
+				count > 2
+			}
+		}
+		modifier = {
+			add = 100
+			count_starbase_modules = {
+				type = bugman.gas_collector
+				count > 3
+			}
+		}
+		modifier = {
+			add = 100
+			count_starbase_modules = {
+				type = bugman.gas_collector
+				count > 4
+			}
+		}
+		modifier = {
+			add = 100
+			count_starbase_modules = {
+				type = bugman.gas_collector
+				count > 5
+			}
+		}
+	}
+}

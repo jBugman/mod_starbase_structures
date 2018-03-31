@@ -2,4 +2,6 @@
  sm_bugman.graviton_detector:0 "Graviton Detector"
  sm_bugman.large_resource_silo:0 "Large Resource Silo"
  sm_bugman.solar_panels:0 "Solar Panels"
+ sm_bugman.gas_collector:0 "Gas Collector"
  bugman.research_facility:0 "Research Facility"
+ bugman.nebula_refinery:0 "Nebula Refinery"

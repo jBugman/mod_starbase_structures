@@ -13,14 +13,11 @@ bugman.graviton_detector = {
 			fail_text = "requires_starport"
 			has_starbase_size >= starbase_starport
 		}
-		custom_tooltip = {
-			fail_text = "requires_black_hole"
-			star = { is_star_class = sc_black_hole }
-		}
+		has_starbase_building = black_hole_observatory
 	}
 	
 	cost = {
-		minerals = 400
+		minerals = 360
 	}
 
 	upkeep_resources = {
@@ -34,9 +31,10 @@ bugman.graviton_detector = {
 
 	show_in_tech = "tech_sensors_3"
 	
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 150
 	}
 }
 
@@ -57,8 +55,48 @@ bugman.solar_panels = {
 		energy = 2
 	}
 	
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 15
+		weight = 25
+	}
+}
+
+bugman.gas_collector = {
+	icon = "GFX_spaceport_nebula_refinery"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 240
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mineral_processing_1 }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		has_starbase_building = nebula_refinery
+	}
+	
+	cost = {
+		minerals = 200
+	}
+
+	produced_resources = {
+		minerals = 4
+	}
+
+	upkeep_resources = {
+		energy = 1
+	}
+
+	show_in_tech = "tech_mineral_processing_1"
+	
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 150
 	}
 }
